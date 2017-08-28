@@ -36,6 +36,8 @@
   // http://facebook.com/macbroserviceroom
   // http://vk.com/macbroserviceroom
   // http://instagram.com/macbroserviceroom
+  // 
+  // +7 (495) 64-255-64
 </template>
 
 
