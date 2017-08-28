@@ -32,6 +32,10 @@
         a(href="#") Link
         a(href="#") Link
         a(href="#") Link
+
+  // http://facebook.com/macbroserviceroom
+  // http://vk.com/macbroserviceroom
+  // http://instagram.com/macbroserviceroom
 </template>
 
 
