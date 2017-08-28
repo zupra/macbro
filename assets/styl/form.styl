@@ -1,0 +1,116 @@
+//скрыть placeholder при фокусе
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+
+// color placeholder
+::-webkit-input-placeholder {color: #999;}
+::-moz-placeholder          {color: #999;} //Firefox 19+ 
+:-moz-placeholder           {color: #999;} //Firefox 18-
+:-ms-input-placeholder      {color: #999;}
+
+
+$focus = #F1C357
+
+form
+  input, textarea
+    margin-bottom .7em
+    width 100%
+
+input, select, textarea, button
+  line-height 1
+  outline 0
+  box-shadow none
+  font inherit
+  border-radius 3px
+  //appearance none
+
+input, textarea, select
+  //-webkit-appearance none
+  //-moz-appearance none
+  appearance none
+
+  border solid 1px #F1C357
+  padding .4em
+  color $header
+  &:focus
+    border-color $focus
+
+textarea
+  min-height 8em
+  resize vertical
+  overflow auto
+label
+  display block
+label, select
+  cursor pointer
+
+select
+  //border 0
+  border 1px solid #CCC
+  //appearance none
+  padding .5em 2em .5em .5em
+  line-height initial
+
+  background #FFF url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><polygon points='0,0 12,0 6,12' fill='gainsboro'/></svg>") right no-repeat
+
+
+
+// >>> ACTIONS ====
+button
+  border 0
+  cursor: pointer
+  color: #FFF
+
+  border-bottom 3px solid rgba(#000 .1)
+  border-radius .4em
+
+  padding .4em 1em
+  transition: background .3s
+  &:hover
+    border-bottom-color rgba(#000 .3)
+
+//button, 
+.btn
+  background: $blue
+  font-size 1.2em
+  margin .4em 0
+
+  
+  &:hover
+    //border-bottom-color rgba(#000 .3)
+    background: $blue - 12%
+
+a.btn
+  color #FFF
+  padding: 0 1em
+
+  text-decoration none !important
+  display inline-block
+
+
+// .btn
+//   color #FFF !important
+//   background $red + 5%
+//   &:hover
+//     background $red + 10%
+
+//   &.success
+//     background-color aquamarine
+//     color cadetblue !important
+  /*
+  &.green
+    background $grey
+    border 2px solid $grey //- 10%
+    &:hover
+      background $grey + 10%
+  */
+
+button, .btn
+  &[disabled]
+    background #e4e4e4
+    color #262626 !important
+    cursor wait //progress
+
