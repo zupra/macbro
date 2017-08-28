@@ -129,15 +129,17 @@ $green = #13ce66
 
 #topNav
   position fixed
-  left: 0
   top 0
+  left: 0
 
   z-index: 5;
   height: 3em;
   background: #FFF;
 
   width: 100%
-  box-shadow: 0 -5px 5px 5px rgba(0,0,0,0.3);
+  //box-shadow: 0 -5px 5px 5px rgba(0,0,0,.3);
+  //border-bottom: 1px solid #DFDFDF
+  box-shadow: 0 5px 7px 0 rgba(#999,.2);
 
   .WrC
     align-items: center

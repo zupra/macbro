@@ -56,7 +56,7 @@
   //314x640
   width: 314px
   height: 640px
-  background url('~assets/img/iphone6plus.png') no-repeat
+  background url('./~assets/img/iphone6plus.png') no-repeat
   position: relative
 
   .screen

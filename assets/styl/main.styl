@@ -18,6 +18,10 @@ $green = #13ce66
 @import 'form'
 
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a
   color $blue
   text-decoration: none
@@ -52,7 +56,9 @@ between(bp1, bp2)
 
 
 body
-
+  // pointer-events: unset;
+  // background: #FFF
+  // height: 100%;
   //line-height: 1.5em
   //font-family: 'Open Sans', 'Helvetica Neue',helvetica,arial,sans-serif
   font 100%/1.4 'Open Sans', 'Helvetica Neue',helvetica,arial,sans-serif
