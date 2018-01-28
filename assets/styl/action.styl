@@ -1,0 +1,66 @@
+// >>> ACTIONS ====
+
+
+a, .link
+  color $blue
+  text-decoration: none
+  transition: color .3s
+  &.circle
+    padding: .7em 1.4em
+    border: 2px solid $blue
+    border-radius: 3em
+    transition: all .3s
+    &:hover
+      color #FFF
+      background: $blue
+
+.link, .circle
+  display: inline-block
+
+
+
+button
+  border 0
+  cursor: pointer
+  color: #FFF
+
+  &.btn
+    background: $blue
+    font-size 1.2em
+    margin .4em 0
+    &:hover
+      background: $blue - 12%
+
+button, a.btn
+  border-bottom 3px solid rgba(#000 .1)
+  border-radius .4em
+
+  padding .4em 1em
+  transition: background .3s
+  &:hover
+    border-bottom-color rgba(#000 .3)
+
+a.green
+  background: $green
+  //padding: .5em 1em
+  &:hover
+    background: $green - 8%
+
+a.btn
+  display inline-block
+  white-space: nowrap
+
+  color #FFF
+  text-decoration none !important
+
+button, .btn
+  &[disabled]
+    background #e4e4e4
+    color #262626 !important
+    cursor wait //progress
+
+
+
+
+
+

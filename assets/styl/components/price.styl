@@ -1,0 +1,84 @@
+.ulPrice_items
+  list-style none
+  margin 1em
+  text-align center
+  li
+    display inline-block
+    margin .5em
+    // cursor: pointer
+    // border 3px solid $orange
+    // padding .7em 1em
+    // display inline-block
+    // border-radius 2em
+    // margin .5em
+      
+    // &:hover
+    //   cursor pointer
+    //   background $orange + 50%
+    &:not(.active)
+      cursor pointer
+    &.active
+      border-color $orange !important
+      background $orange !important
+      color #FFF
+      //cursor default
+
+
+
+.Table
+  max-width 800px
+  margin 2em auto
+  padding-left 1.4em
+  position relative
+  //border-top 1px solid #EEE
+  border-left 1px solid #EEE
+
+  i
+    font-style: normal
+    //line-height 1
+    padding: .2em .5em
+    border 1px solid #EEE
+    border-radius: 1em
+    color $blue
+    &:not(.active)
+      cursor pointer
+      // &:hover
+      //   background rgba($orange .1)
+
+    & + i
+      margin-left .3em
+    &.active
+      
+      //background: $orange
+      color $orange //#FFF
+
+
+  .label
+    font-weight bold
+    font-size 2em
+    color #0ebeff //$orange
+    // color: #EEE
+    padding .5em 0
+    line-height 1
+    background: #FFF
+    
+    position absolute
+    top 50%
+    left -.5em //-1.5em
+    transform translateY(-50%) //rotate(90deg)
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+
+  dl
+    color $header
+  dt
+    width: 70%;
+  dd
+    width: 30%;
+    //font-weight: 700
+  dt, dd
+    //width: 50%;
+    padding: .5em;
+    //border-bottom 1px solid #EEE
+    &:nth-of-type(odd)
+      background #EFEFEF

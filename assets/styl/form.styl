@@ -12,7 +12,7 @@
 :-ms-input-placeholder      {color: #999;}
 
 
-$focus = #F1C357
+$focus = #ffd700; //#F1C357
 
 form
   input, textarea
@@ -20,11 +20,11 @@ form
     width 100%
 
 input, select, textarea, button
+  // RESET
   line-height 1
   outline 0
   box-shadow none
   font inherit
-  border-radius 3px
   //appearance none
 
 input, textarea, select
@@ -32,7 +32,8 @@ input, textarea, select
   //-moz-appearance none
   appearance none
 
-  border solid 1px #F1C357
+  border-radius 3px
+  border 1px solid $text
   padding .4em
   color $header
   &:focus
@@ -58,59 +59,4 @@ select
 
 
 
-// >>> ACTIONS ====
-button
-  border 0
-  cursor: pointer
-  color: #FFF
-
-  border-bottom 3px solid rgba(#000 .1)
-  border-radius .4em
-
-  padding .4em 1em
-  transition: background .3s
-  &:hover
-    border-bottom-color rgba(#000 .3)
-
-//button, 
-.btn
-  background: $blue
-  font-size 1.2em
-  margin .4em 0
-
-  
-  &:hover
-    //border-bottom-color rgba(#000 .3)
-    background: $blue - 12%
-
-a.btn
-  color #FFF
-  padding: 0 1em
-
-  text-decoration none !important
-  display inline-block
-
-
-// .btn
-//   color #FFF !important
-//   background $red + 5%
-//   &:hover
-//     background $red + 10%
-
-//   &.success
-//     background-color aquamarine
-//     color cadetblue !important
-  /*
-  &.green
-    background $grey
-    border 2px solid $grey //- 10%
-    &:hover
-      background $grey + 10%
-  */
-
-button, .btn
-  &[disabled]
-    background #e4e4e4
-    color #262626 !important
-    cursor wait //progress
 
